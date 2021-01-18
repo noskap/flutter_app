@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   rxdart: ^0.25.0
+  provider:
 
 
   # The following adds the Cupertino Icons font to your application.

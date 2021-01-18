@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/constants/text.constants.dart';
-import 'package:flutter_app/widgets/counter.dart';
-
-import '../../main.dart';
+import 'package:flutter_app/widgets/counterObservableWidget.dart';
 
 class Status extends StatefulWidget {
   final int count;
@@ -101,7 +99,7 @@ class _MyStatusPageState extends State<Status> {
                     ),
                   ],
                 ),
-                CounterWidget(),
+                CounterObservableWidget(),
                 Card(
                   // margin: EdgeInsets.all(15),
                   child: Padding(

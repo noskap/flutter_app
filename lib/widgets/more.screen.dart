@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/counterObservableWidget.dart';
+import 'package:flutter_app/widgets/counterProviderWidget.dart';
 
 class MoreScreen extends StatelessWidget {
   @override
@@ -59,6 +61,8 @@ class MoreScreen extends StatelessWidget {
               title: Text('Logout'),
               onTap: () => {Navigator.of(context).pop()},
             ),
+            CounterObservableWidget(),
+            CounterProviderWidget(),
           ],
         ),
       ),
