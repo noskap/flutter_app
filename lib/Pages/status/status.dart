@@ -66,14 +66,14 @@ class _MyStatusPageState extends State<Status> {
                         // horizontal).
                         children: <Widget>[
                           Text(
-                            'You have pushed the button this many times:',
+                            pushedButtonXTimes,
                           ),
                           Text(
                             widget.count.toString(),
                             style: Theme.of(context).textTheme.headline4,
                           ),
                           Text(
-                            'This number is passed through the class',
+                            counterPushed,
                             style: TextStyle(fontSize: 10),
                           ),
                         ],
@@ -108,7 +108,7 @@ class _MyStatusPageState extends State<Status> {
                       width: MediaQuery.of(context).size.width - 50,
                       child: Column(
                         children: [
-                          Text('Next Rank: Platinum Tier'),
+                          Text(placeholder1),
                         ],
                       ),
                     ),

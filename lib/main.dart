@@ -6,6 +6,8 @@ import 'package:flutter_app/widgets/more.screen.dart';
 import 'package:provider/provider.dart';
 import 'package:rxdart/rxdart.dart';
 
+import 'constants/text.constants.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CounterProvider()),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: title1,
         theme: ThemeData(
           // This is the theme of your application.
           //
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.deepPurple,
         ),
-        home: MyHomePage(title: 'Flutter Demo Home Page'),
+        home: MyHomePage(title: title2),
       ),
     );
   }
@@ -194,7 +196,6 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter(provider),
-        tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
@@ -212,27 +213,27 @@ class _MyHomePageState extends State<MyHomePage> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: 'Status',
+              label: Statusnav,
               backgroundColor: Colors.green,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
-              label: 'Wallet',
+              label: Wallet,
               backgroundColor: Colors.blue,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'Events',
+              label: Events,
               backgroundColor: Colors.orange,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'Bookings',
+              label: Bookings,
               backgroundColor: Colors.red,
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'Challenges',
+              label: Challenges,
               backgroundColor: Colors.tealAccent,
             ),
           ],

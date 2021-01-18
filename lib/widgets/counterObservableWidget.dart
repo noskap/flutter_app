@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/constants/text.constants.dart';
 
 import '../main.dart';
 
@@ -25,7 +26,7 @@ class CounterObservableWidget extends StatelessWidget {
                 },
               ),
               Text(
-                'This number is observed using RxDart',
+                counterObserved,
                 style: TextStyle(fontSize: 10),
               ),
             ],

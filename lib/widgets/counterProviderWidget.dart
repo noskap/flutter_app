@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/constants/text.constants.dart';
 import 'package:provider/provider.dart';
 
 import '../main.dart';
@@ -42,7 +43,7 @@ class CounterProviderWidget extends StatelessWidget {
                 },
               ),
               Text(
-                'This number is provided using Provider.of',
+                counterProvided,
                 style: TextStyle(fontSize: 10),
               ),
             ],
